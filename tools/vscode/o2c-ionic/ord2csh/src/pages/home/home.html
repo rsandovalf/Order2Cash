@@ -1,14 +1,60 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Order 2 Cash
     </ion-title>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+
   </ion-navbar>
 </ion-header>
+    
+
+<ion-nav #mycontent [root]="homePage"></ion-nav>
+
+
+<ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>PIPELINE O2C</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list >
+      <button ion-item  menuClose >
+        Requerimientos
+      </button>
+      <button ion-item  menuClose >
+        Cotizaciones
+      </button>
+      <button ion-item  menuClose >
+        Trabajo
+      </button>
+        <button ion-item  menuClose >
+        Facturas
+      </button>
+      <button ion-item  menuClose >
+        Pagos
+      </button>
+      <button ion-item menuClose detail-none>
+        <b>Cerrar Menu</b>
+      </button>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+
+
 
 <ion-content padding>
-  The world is your oyster.
+  Hola po Tilipe.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    La idea de esta aplicación que no hace nada es probar el setup de ambientes y proyectos.
+    Por ejemplo, ver si un apk generico puede correr en tu celu, etc.
+    Mi celular es Android 6.0.1
   </p>
 </ion-content>
