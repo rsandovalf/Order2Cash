@@ -1,1 +1,37 @@
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+
+
+<ion-menu [content]="mycontent">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>PIPELINE O2C</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list >
+      <button ion-item (click)="irSeccion(reqs)" menuClose >
+        Requerimientos
+      </button>
+      <button ion-item  menuClose >
+        Cotizaciones
+      </button>
+      <button ion-item  menuClose >
+        Trabajo
+      </button>
+        <button ion-item  menuClose >
+        Facturas
+      </button>
+      <button ion-item  menuClose >
+        Pagos
+      </button>
+      <button ion-item menuClose detail-none>
+        <b>Cerrar Menu</b>
+      </button>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
 <ion-nav [root]="rootPage"></ion-nav>
