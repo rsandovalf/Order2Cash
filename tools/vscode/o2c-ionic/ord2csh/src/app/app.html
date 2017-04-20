@@ -4,28 +4,44 @@
 <ion-menu [content]="mycontent">
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>PIPELINE O2C</ion-title>
+      <ion-title (click)="irHome()" menuClose>PIPELINE O2C</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list >
       <button ion-item (click)="irSeccion(reqs)" menuClose >
-        Requerimientos
+        <ion-icon name="arrow-down" item-left></ion-icon>
+        <ion-badge item-right >10</ion-badge>
+        Solicitudes
+        <ion-icon name="paper-plane" item-right></ion-icon>
       </button>
-      <button ion-item  menuClose >
+      <button ion-item menuClose >
+        <ion-icon name="arrow-down" item-left></ion-icon>
         Cotizaciones
+        <ion-badge item-right>0</ion-badge>
+        <ion-icon name="attach" item-right></ion-icon>
       </button>
       <button ion-item  menuClose >
+        <ion-icon name="arrow-down" item-left></ion-icon>
         Trabajo
+        <ion-badge item-right>0</ion-badge>
+        <ion-icon name="clock" item-right></ion-icon>
       </button>
         <button ion-item  menuClose >
+          <ion-icon name="arrow-down" item-left></ion-icon>
         Facturas
+        <ion-badge item-right>5</ion-badge>
+        <ion-icon name="done-all" item-right></ion-icon>
       </button>
       <button ion-item  menuClose >
+        <ion-icon name="arrow-down" item-left></ion-icon>
         Pagos
+        <ion-badge item-right>1</ion-badge>
+        <ion-icon name="cash" item-right></ion-icon>
       </button>
       <button ion-item menuClose detail-none>
+        <ion-icon name="close-circle" item-left></ion-icon>
         <b>Cerrar Menu</b>
       </button>
     </ion-list>
@@ -33,5 +49,3 @@
   </ion-content>
 
 </ion-menu>
-
-<ion-nav [root]="rootPage"></ion-nav>

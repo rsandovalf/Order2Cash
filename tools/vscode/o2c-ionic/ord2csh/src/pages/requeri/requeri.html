@@ -7,12 +7,69 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>requeri</ion-title>
+    <ion-buttons>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+        <ion-title>Solicitudes</ion-title>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<ion-card>
+  <ion-card-content>
+    <ion-card-title>#1# Cotizar Servicio</ion-card-title>
+    <p>
+      Se solicita cotizar servicios de programación para aplicación corporativa.<br/><br/>
+      Fecha de Solicitud: 10/10/2017<br/>
+      Fecha de Ventimiento: 12/12/2017<br/>
+      Estado: PENDIENTE<br/>
+      Servicio: DESARROLLO
+    </p>
+  </ion-card-content>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='chatbubbles'></ion-icon>
+          Comentar
+        </button>
+      </ion-col>
+      <ion-col  text-center>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='attach'></ion-icon>
+          Cotizar
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='clock'></ion-icon>
+          Ejecutar
+        </button>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+</ion-card>
 
+<ion-card>
+  <ion-card-content>
+    <ion-card-title>#2# Cotizar Servicio</ion-card-title>
+    <p>
+      Se solicita cotizar servicios de programación para aplicación corporativa.
+    </p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <ion-card-title>#3# Cotizar Servicio</ion-card-title>
+    <p>
+      Se solicita cotizar servicios de programación para aplicación corporativa.
+    </p>
+  </ion-card-content>
+</ion-card>
 </ion-content>
